@@ -1,0 +1,87 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    background-color: #6b4f4f;
+    color: white;
+    padding: 20px 0;
+}
+
+.heading h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Container grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Table section boxes */
+.container > div {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section headings */
+.menu_heading {
+    text-align: center;
+    color: #4b3832;
+    border-bottom: 2px solid #d9ad7c;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #d9ad7c;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
